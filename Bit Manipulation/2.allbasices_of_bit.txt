@@ -1,0 +1,140 @@
+1. In binary if any number has 1 in last digit it will be odd number and if the number is zero it will be 0 . example : 101->>>5(decimal) -> is odd number on the other hand 100-->>>4(decimal)->even number .
+
+x1 x2 AND OR XOR
+0  0   0  0   0
+0  1   0  1   1
+1  0   0  1   1
+1  1   1  1   0
+
+
+NOT operator ->> 0 convert to 1 and 1 convert to 0 and sign is ! . For left shit << sign and Right shift >> sign . for AND symbol is & and OR  symbol is & and XOR symbol is | .
+
+For left shift : 3<<1 means the binary of 3 is 11 . after 1 bit left shift it will be 110. so this value is 6 . shortly 3*2^1 = 6,other later 1 bit shift then it wil be 1100. the value is 12 in decimal.it can be write 3<<2. so ,3*2^2=12
+
+For right shift: 4<<1 means the binary of 4 is 100 . after 1 bit right shift 1 bit will be removed from right side. then it will be 10. the value will be 2(in decimal). shortly 4/2^1=2, other later 1 bit right shift , then number will be 1. so it can be write 4<<2 . shortly 4/2^2 =1
+
+For 4 bit store combination is possible :  first place second place third place fourth place
+                                             0 or 1         0 or 1   o or 1        o or 1
+                                             2 ways   *      2 ways * 2 ways  *   2 ways = 16 ways. 
+                                             so , for n bit combination is possible 2^n ways store possible .  for 4 bit minimum number is 0000 and maximum number is 1111 which is decimal 15.so we find maximum number of 4 bit can be store (2^4-1). so, for n bit maximum number can be store is (2^n-1) value in decimal.
+In binary to store integer need 4bytes. so , which is 32 bit . so,in 32 bit highest binary number can be 11111----11(upto 32 ta 1 ) which will be maximum number for 32 bit can be store . so , highest number can be store (2^32-1)
+
+
+for finding 2 to power n :
+# for 1<<0 = 1 (binary)=>1(decimal)=2^0
+#     1<<1 =10         =>2         =2^1
+#     1<<2 =100        =>4         =2^2
+#     1<<3 =1000       =>8         =2^3
+    
+#     so for finding 2 to power n . we can write 1<<n. it will calculate 2^n .
+
+for 1<<32-1 why is not calculate in c++:
+
+# for c++ we know that the interger number can be store upto 32 bit . so, the maximum number can be store which value will be 2^32-1. but to represent 2^32 we need 33 bit for this resason it donot calculate anything beacuse , overflow . if the value is unsigned it maximum number can be store 2^31 - 1 because , 1 most significant bit is used to represent the sign negative or positive. for negative bit is 1 and positive bit is 0.
+# if declear unsigned then it calulate 2^32-1 . because , it only store positive number  and no sign bit is used . 
+
+set,unset,countbits
+
+for binary number 1 0 1 1 1 0 1 1
+                  nth           0th
+                  bit           bit
+
+ where indexing start with right to left . least significant bit(lsb)most right side bit where index is 0th bit from left side . For most significat bit (msb) most left side bit or nth bit
+
+ 1 -> represent set bit
+ 0 -> represent unset bit
+
+ above number has 6 times 1. so , the number of set bit is 6
+ above number has 2 times 0. so, the number of unset bit is 2
+
+
+to check ith set or unset. First we will take the number then ,  then we will take such a number sothat ith bit 1 and other bit zero. if after occuring the AND operation between two number and result is 0.then number will not be set but the number is non zero number will be set.
+
+example : 5->>101 to check 2th bit set or not we take number of only second bit 1 other bit 0 , so number will be 100
+              100 AND operation 
+              100 so, ith bit or 2th bit is set becuse , and operation result is not zero.
+          5->>101 to check 1th bit set or not we take number of only second bit 1 other bit 0 , so number will be 010
+              100 AND operation 
+              000 so, ith bit or 1th bit is unset becuse , and operation result  is  zero.
+
+for setting 1 in ith place :
+
+# and if we want to set 1 where has 0 in binary . for this we take the number and then we will take such number binary where has unset bit . if we want to do ith unset bit into ith set bit . for this we will do OR operation between the number and where we want to set value 1 . then result will be desire set value . example : if binary number is 1001  and we want to set value in 1th position then we take anothr number 0010 here we take 1th place 1 beacuse , we want to set 1 in 1th place of number 1001
+
+
+
+
+Other important note :
+if a binary nubmer has one 1 and other zero . then if we substract 1 from that number we find n-1 one from that number . 
+example : 10000 is number 
+             -1
+           1111 (after substract) . first number was 10000 which is five bit . after substracting 1 from that number we find 4bit 1 from that number.like 2^n will have n+1 bit to represent and 2^n-1 will have n bit to represent binary number .
+
+another example : 8->>1000 after 1 substract number will be 111 which is equal to 7 . 
+
+#    Combining a | 1 << i:
+
+# The expression a | 1 << i sets the i-th bit of the variable a to 1.
+# Suppose a is 5 (binary 0101) and i is 1:
+# 1 << 1 results in 10 (binary for 2).
+# a | 10 results in 0101 | 0010, which is 0111 (binary for 7).
+# Essentially, this operation ensures that the bit at position i in a is set to 1, regardless of its previous value.
+
+
+# for a&(~(1<<i))
+# if 5=101, for doing inverse 010 we use ~5. it is use for convert 0 to 1 and 1 to 0 . example : 10001000 if i want to make 01110111 then we use ~.
+
+# if we want to unset the ith value of number. then we do AND operation of number and ith bit 1 toggle usinng ~. 
+# example:the number is 10001. and we want to unset 4th bit then , we can write 10000 then we convert it into 01111 . and do and operation 
+# 10001
+# 01111 AND operation 
+# 00001 (so 4th bit now unset)
+
+
+ # toogle 
+    # The XOR operation toggles the bit at position i:
+    # If the bit is 0, it becomes 1.
+    # If the bit is 1, it becomes 0.
+    print_binary(a^(1<<i))
+
+
+print(n<<1)     #n*2 . shortly to find multiplication  by 2
+print(n>>1)     #n/2 . shortly to find the divide by 2
+
+    
+    # for clear lsb upto 4th bit position 
+    
+    # we know that 59 = 000111011. for making it 000100000 ,
+    # first 111100000 AND operation with 000111011 . but to represent 111100000 is difficult . for this it convert into 000011111 and it can be find from 100000(1<<i+1)-1 = 000011111
+    # so, after making it inverse we find 111100000 which is the first number we do AND operation with 000111011
+
+
+for msb clear upto 3th position
+# we know that 59 = 000111011. for making it 000001011 ,
+    # first 000001111 AND operation with 000111011 . but to represent 000001111 is difficult . for this find from 10000(1<<i+1)-1 = 00001111
+
+
+most important note:
+n&(n-1) drops the lowest set bit and n&1 drop the last bit of binary number 
+
+all shortcut in below :
+
+Set union A | B
+Set intersection A & B
+Set subtraction A & ~B
+Set negation ALL_BITS ^ A or ~A
+Set bit A |= 1 << bit
+Clear bit A &= ~(1 << bit)
+Test bit (A & 1 << bit) != 0
+Extract last bit A&-A or A&~(A-1) or x^(x&(x-1))
+Remove last bit A&(A-1)
+Get all 1-bits ~0
+~(x+1)+1 = ~x
+ mask = 0xffffffff 
+
+Limiting to 32 Bits:
+
+The bitwise AND operation with mask (& mask) ensures that the results of sum and carry are limited to 32 bits. This simulates the behavior of a 32-bit integer.
+
+The check (a >> 31) & 1 is used to determine if the result a is negative in a 32-bit sense.
+because we know that if most significant bit 1 , then it is negative number . 
