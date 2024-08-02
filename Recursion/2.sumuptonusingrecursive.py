@@ -1,7 +1,7 @@
 def factorial(s):
     if s==0:
-        return 0
-    return s+factorial(s-1) 
+        return 1
+    return s*factorial(s-1) 
 
-s = int(input())
+s = int(input("Enter number:"))
 print(factorial(s))

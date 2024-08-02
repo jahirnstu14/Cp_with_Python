@@ -15,7 +15,7 @@ import math
 def binary_search(low, high, key):
     while low <= high:
         mid = (low + high) // 2
-        x = mid * (mid + 1)
+        x = (mid * (mid + 1)) // 2
         if x < key:
             low = mid + 1
         elif x > key:
@@ -29,7 +29,7 @@ def main():
     flag = 0
     for i in range(1, int(math.sqrt(n)) + 1):
         b = n - (i * (i + 1)) // 2
-        y = binary_search(1, int(math.sqrt(2 * b)), 2 * b)
+        y = binary_search(1, int(2 * b), 2 * b)
         if y > 0:
             flag = 1
             break

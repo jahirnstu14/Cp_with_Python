@@ -1,4 +1,4 @@
-# details explanation with animation : https://leetcode.com/problems/median-of-two-sorted-arrays/discuss/1701107/Java-oror-Binary-Search-Explained-oror-Animation-Added-%3A)
+ # details explanation with animation : https://leetcode.com/problems/median-of-two-sorted-arrays/discuss/1701107/Java-oror-Binary-Search-Explained-oror-Animation-Added-%3A)
 
 
 # without binary search and time complexity is 0(len(num3)loglen(num3))

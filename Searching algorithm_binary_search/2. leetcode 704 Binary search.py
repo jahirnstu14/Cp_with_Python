@@ -9,7 +9,7 @@ def binarySearch(array, low, high, searching_value):
         
         if array[mid] == searching_value:
             return mid
-        elif array[mid] < searching_value:
+        elif searching_value > array[mid]:
             low = mid+1
         else:
             high = mid -1
@@ -28,4 +28,4 @@ if __name__ == '__main__':
     if result != -1:
         print("Element is present at index", result)
     else:
-        print("Element is not present in array")
+        print("Element i s not present in array")

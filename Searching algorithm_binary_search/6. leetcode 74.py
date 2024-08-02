@@ -1,9 +1,7 @@
-
-
 # Using brtue force method 
 n , m = map(int,input().split())
 matrix = []
-target = int(input())
+target = int(input())                                                                                                           
 
 # for i in range(n):
 #     matrix.append(list(map(int,input().split())))
@@ -35,7 +33,7 @@ target = int(input())
 
 # n * m matrix convert to an array => matrix[x][y] => a[x * m + y]
 
-# an array convert to n * m matrix => a[x] =>matrix[x / m][x % m];
+# an array convert to n * m matrix => a[x] =>matrix[x // m][x % m];  
 
 n = len(matrix)
 if n == 0:
@@ -48,7 +46,7 @@ while l < r:
     if matrix[mid // m][mid % m] < target:
         l = mid + 1
     else:
-        r = mid
+        r = mid    # the reason behind not having r = mid - 1 beacause, the if condition has only less than sample so, another else condition will be equal or less than one.
 
 print(matrix[r // m][r % m] == target) 
 
