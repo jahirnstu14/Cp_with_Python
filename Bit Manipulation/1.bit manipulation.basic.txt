@@ -1,3 +1,6 @@
+
+To know all basic of bit manipulation : https://cp-algorithms.com/algebra/bit-manipulation.html
+
 // 5 = 101 in binary . if i do 3 digit left shift then it will be 101000 which is equal to 40 in decimal . so, 5 * 2^3 = 40 . and it can be represented by 5*8 and bit wise 5<<3(number of digit will be shifted)
 // 5 = 101 , if one digit right shift . then it will be 10 = 2 . to 5//2^1 . in bitwise operation 5>>1(number of digit will be shift) .
 // left shift mane multiplication and division  shift mane division by 2 raised to the number of digit shift .
