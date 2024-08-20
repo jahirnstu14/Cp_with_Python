@@ -197,24 +197,32 @@
 
 def divide_large_integer(a, b, base=10):
     carry = 0
-    for i in range(len(a) - 1, -1, -1):
-        cur = a[i] + carry * base
-        a[i] = cur // b
+    
+    for i in range(len(a)):
+        cur = carry * base + a[i]
+        a[i] = cur // b   # use extra list for store quotient : result.append(a[i])
         carry = cur % b
+
+    # Remove leading zeros from the result
+    while len(a) > 1 and a[0] == 0:
+        a.pop(0)
     
-    while len(a) > 1 and a[-1] == 0:
-        a.pop()
+    quotient_digits = len(a)
+    remainder_digits = len(str(carry))
     
-    return a, carry
+    return a, carry, quotient_digits, remainder_digits
 
 # Example usage:
-a = [1, 2, 3]  # Represents the number 123
-b = 4
+a = [1, 2, 3, 4, 5, 6]  # Represents the number 123456
+b = 789
 base = 10
 
-result, remainder = divide_large_integer(a, b, base)
-print("Quotient:", result)  # Output should represent the quotient of 123 / 4
-print("Remainder:", remainder)  # Output should represent the remainder of 123 / 4
+result, remainder, q_digits, r_digits = divide_large_integer(a, b, base)
+print("Quotient:", result)  # Output should represent the quotient of 123456 / 789
+print("Remainder:", remainder)  # Output should represent the remainder of 123456 / 789
+print("Quotient Digits:", q_digits)
+print("Remainder Digits:", r_digits)
+
 
 
     
