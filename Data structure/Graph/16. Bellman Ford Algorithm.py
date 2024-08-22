@@ -1,6 +1,6 @@
 # Nice explanation : https://takeuforward.org/data-structure/bellman-ford-algorithm-g-41/
 
-# this alogrithm can be used for positive distance or negative distance from node to node. it is done by using dynamic programming procedure. it has high time complexity than dijkstra algorithm. so, it'll be used at the time of negative distance edge present in the graph .
+# this alogrithm can be used for positive distance or negative distance from node to node. it is done by using dynamic programming procedure. it has high time complexity than dijkstra algorithm. so, it'll be used at the time of negative distance edge present in the graph . it doesn't work for negative weighted cycles.
 
 class Solution:
     def bellman_ford(self, V, edges, S):

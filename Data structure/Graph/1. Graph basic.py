@@ -1,3 +1,6 @@
+
+# basic graph problem in one place : https://leetcode.com/discuss/study-guide/2043791/graph-all-in-one-must-watch-for-beginners
+
 # big of 0 for graph :
      
 #                       for adjancency list of graph :                      for adjancency matrix  of graph 

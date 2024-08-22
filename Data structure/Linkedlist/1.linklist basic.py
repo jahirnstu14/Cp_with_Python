@@ -1,3 +1,6 @@
+# linklist all basic important problem : https://leetcode.com/discuss/study-guide/2048320/linked-list-all-in-one-must-watch-for-beginners
+
+
 # head = { "value":11,
 #          "next":{
 #              "value":23,
