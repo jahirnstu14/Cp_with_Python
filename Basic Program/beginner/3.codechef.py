@@ -11,6 +11,6 @@ for i in range(n):
     while k>0:
         remainder=remainder*10 + k%10
         k//=10
-        i+=1
+
     print(f"{remainder}")
     
