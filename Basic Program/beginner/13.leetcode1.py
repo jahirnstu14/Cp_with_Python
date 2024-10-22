@@ -2,11 +2,11 @@
 
 # one solution
 
-def interpret(command):
-    
-    command_new1 = command.replace("()","o")
-    command_new2 = command_new1.replace("(al)","al")
-    return command_new2
+# def interpret(command):
+#
+#     command_new1 = command.replace("()","o")
+#     command_new2 = command_new1.replace("(al)","al")
+#     return command_new2
     
         
 # command = input()
@@ -14,21 +14,23 @@ def interpret(command):
 
 # print(newthing)
 
+
 # second solution using dictionary
-# def interpret(command):
-    
-#     d = {'G':'G','()':'0','(al)':'al'}
-    
-#     temp=''
-#     res=''
-    
-#     for i in range(len(command)):
-#         temp+=command[i]
-#         if temp in d:
-#             res+=d[temp]
-#             temp=''
-#     return res
-        
+
+def interpret(command):
+
+    d = {'G':'G','()':'o','(al)':'al'}
+
+    temp = ''
+    res = ''
+
+    for x in command:
+        temp+=x
+        if temp in d:
+            res+=d[temp]
+            temp=''
+    return res
+
 command = input()
 newthing = interpret(command)
 
