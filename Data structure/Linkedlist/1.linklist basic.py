@@ -1,3 +1,18 @@
+# interviw question about linklist : last e dekbo
+#
+# 1) Linked List : ***
+#
+# Generate a linked list from given array ***
+# Reverse a linked list ***
+# Merge two sorted linked list without using auxiliary space ***
+# Detecting a linked list if it is circular in O(n) time. **
+# Remove Duplicates from Sorted List ***
+
+
+# linked for learning linkedlist clearly and it will learn start of linked list learning
+# https://leetcode.com/discuss/study-guide/1800120/become-master-in-linked-list
+
+
 # linklist all basic important problem : https://leetcode.com/discuss/study-guide/2048320/linked-list-all-in-one-must-watch-for-beginners
 
 

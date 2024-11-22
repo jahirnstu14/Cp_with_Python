@@ -3,3 +3,31 @@ medium blog : https://shahriar76.medium.com/important-topics-and-questions-for-b
 linked list details : https://leetcode.com/discuss/study-guide/1800120/become-master-in-linked-list
 
 
+Object Oriented Programming ( OOP ): ***
+What is OOP? ***
+What are the four design principles in OOP? ***
+Encapsulation ***
+Inheritance ***
+Abstraction ***
+Polymorphism ***
+Abstract class ***
+Interface ***
+Difference between abstract class and interface ***
+What is runtime and compile time polymorphism ***
+
+DBMS, RDBMS, SQL : ***
+What is DBMS and RDBMS? ***
+DDL (Data Definition Language) ***
+DML (Data Manipulation Language) ***
+DCL (Data Control Language) ***
+TCL (Transaction Control Language) ***
+What is meant by ACID properties in DBMS? ***
+Join ( Left, Right, Full outer, Inner ) ***
+Keys ( Primary key, Foreign Key, Composite key, Unique Key ) ***
+Practice SQL queries in Hackerrank : https://www.hackerrank.com/domains/sql ***
+
+Miscellaneous :
+How can you reverse an array? ***
+Difference between pass by reference and pass by value. ***
+Difference between tree and graph. ***
+Finding duplicates from two arrays ***

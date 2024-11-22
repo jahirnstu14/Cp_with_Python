@@ -1,4 +1,33 @@
-# binary search tree is best for lookup(),remove() with complexity 0(log(n))whereas for linklist or list is will be o(n) and for insertion any value binary search tree taking time complexity 0(log n ) whereas linklist or list takes 0(1). here, linkedlist is best for inserion 
+# interview preparation : last a dekbo
+# 2) Binary Tree : ***
+#
+# Reverse a binary tree ***
+# Calculate the height/depth of a binary tree ***
+# Calculate the diameter of a binary tree **
+# Post Traverse a Binary Tree. ***
+# Pre Order traversal Binary Tree ***
+# Inorder Traversal of a Binary Tree ***
+#
+# 3) Binary Search Tree : ***
+#
+# Insert new element in a BST ***
+# Delete Item from BST ***
+# Min Heap / Priority Queue ***
+# Max Heap ***
+
+
+
+
+
+
+
+
+
+
+
+
+
+# binary search tree is best for lookup(),remove() with complexity 0(log(n))whereas for linklist or list is will be o(n) and for insertion any value binary search tree taking time complexity 0(log n ) whereas linklist or list takes 0(1). here, linkedlist is best for inserion
 
 # to learn the tree basic nice blog with problem : https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/
 

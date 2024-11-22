@@ -1,4 +1,15 @@
-# dynamic programmming is used for recursive problem optimal solution . 
+# for interview preparation : last e dekbo
+# Dynamic Programming : ***
+# Basic Recursion and Dynamic Programming ***
+# 0–1 Knapsack **
+# Coin Change **
+# Longest Increasing Subsequence **
+# Longest Common Subsequence **
+
+
+
+
+# dynamic programmming is used for recursive problem optimal solution .
 # nicely describe dp link : https://www.youtube.com/watch?v=5dRGRueKU3M&list=PLJULIlvhz0rE83NKhnq7acXYIeA0o1dXb
 
 # also another blog for dp : https://takeuforward.org/data-structure/dynamic-programming-introduction/

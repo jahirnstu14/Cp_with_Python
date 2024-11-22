@@ -1,4 +1,21 @@
-
+# for interview preparation : last e dekbo
+# 1) Depth First Search : ***
+#
+# Graph Traversal ***
+# Count Connected components ***
+# Cycle finding or detecting **
+# 2) Breadth First Search : ***
+#
+# Shortest path in unweighted graph ***
+# Given a graph, check whether it is bi-colorable or not. ***
+# 3) Dijkstra **
+#
+# Complexity **
+# Weakness **
+# 4) Bellman ford **
+#
+# Complexity **
+# When we should use bellman ford instead of Dijkstra **
 # basic graph problem in one place : https://leetcode.com/discuss/study-guide/2043791/graph-all-in-one-must-watch-for-beginners
 
 # big of 0 for graph :
